@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aranger <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aranger <aranger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:16:10 by aranger           #+#    #+#             */
-/*   Updated: 2023/11/02 14:48:00 by aranger          ###   ########.fr       */
+/*   Updated: 2023/12/04 11:44:48 by aranger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ typedef struct s_list
 }			t_list;
 
 int		ft_isalpha(int c);
+int		ft_isspace(char c);
+int		ft_count_word(char *line);
 int		ft_toupper(int c);
 int		ft_isdigit(int c);
 int		ft_tolower(int c);
@@ -64,5 +66,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+int		ft_printf(const char *str, ...);
+char	*get_next_line(int fd);
 
 #endif

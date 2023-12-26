@@ -6,7 +6,7 @@
 #    By: aranger <aranger@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/07 11:13:31 by aranger           #+#    #+#              #
-#    Updated: 2023/11/28 13:42:10 by aranger          ###   ########.fr        #
+#    Updated: 2023/12/04 11:44:53 by aranger          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ SRCS		= \
 			ft_isalnum.c \
 			ft_isascii.c \
 			ft_isprint.c \
+			ft_isspace.c \
 			ft_isdigit.c \
 			ft_bzero.c \
 			ft_calloc.c \
@@ -42,6 +43,7 @@ SRCS		= \
 			ft_strnstr.c \
 			ft_split.c \
 			ft_itoa.c \
+			ft_count_word.c \
 			ft_putchar_fd.c \
 			ft_putstr_fd.c \
 			ft_putendl_fd.c \
@@ -52,10 +54,8 @@ SRCS		= \
 			ft_printf/ft_print_others.c \
 			ft_printf/ft_print_unsigned.c \
 			ft_printf/ft_printf.c \
-			ft_printf/ft_printf.h \
 			get_next_line/get_next_line_utils.c \
 			get_next_line/get_next_line.c \
-			get_next_line/get_next_line.h \
 
 SRC			= $(addprefix src/, $(SRCS))
 
